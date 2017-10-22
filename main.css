@@ -1,0 +1,61 @@
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+ /* background-image: url(img/Background2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;*/
+  grid-template-areas:
+  "header header profilepic"
+  "aboutme aboutme aboutme"
+  "projects projects sidebar"
+  "fortuneteller virtualpet sidebar"
+  "footer footer footer";
+
+  border: solid 2px black;
+}
+
+p {
+	font-size: arial;
+}
+
+header {
+	grid-area: header;
+	width: 100%;
+	border: solid 2px black;
+}
+
+.aboutme {
+	grid-area: aboutme;
+	border: solid 2px black;
+}
+
+.fortuneteller {
+	grid-area: fortuneteller;
+	border: solid 2px black;
+}
+
+.projects {
+	grid-area: projects;
+	border: solid 2px black;
+}
+.virtualpet {
+	grid-area: virtualpet;
+	border: solid 2px black;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	border: solid2px black;
+}
+
+.footer {
+	grid-area: footer;
+	border: solid 2px black;
+}
+
+#profilepic{
+	width: 250px;
+  height: 300px;
+  margin: 10px;
+}
