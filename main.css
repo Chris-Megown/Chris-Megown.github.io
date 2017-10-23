@@ -21,9 +21,16 @@
 
 header {
 	grid-area: header;
-	text-align: start;
 	align-self: center;
 	background-color: white;
+}
+
+h1 {
+	text-align: start;
+}
+header.ul {
+	justify-self: end;
+	display: inline;
 }
 
 ul {
