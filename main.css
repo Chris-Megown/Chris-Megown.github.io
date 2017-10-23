@@ -1,6 +1,6 @@
 #container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 250px;
+	grid-template-columns: 1fr 2fr 2fr 1fr;
 	grid-template-rows: 85px 300px auto auto auto 1fr 150px;
 	grid-gap: 5px;
  /* background-image: url(img/Background2.jpg);
@@ -31,6 +31,7 @@ ul {
 }
 
 ul li{
+	font-weight: bold;
 	display: inline;
 	padding: 10px;
 
@@ -84,11 +85,15 @@ ul li{
 }
 .footer {
 	grid-area: footer;
+	text-align: center;
 	background-color: #b7c7ea;
 }
 
 #profilepic{
-	width: 200px;
-	height: 250px;
-	border-radius: 20%
+	width: 80%;
+	height: auto;
+	border: 3px solid black;
+	border-radius: 50%;
+	margin: 10px;
+
 }
