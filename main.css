@@ -1,30 +1,29 @@
 #container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 300px;
-	grid-template-rows: 50px 250px auto 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 250px;
+	grid-template-rows: 85px 300px auto auto auto 1fr 150px;
 	grid-gap: 5px;
  /* background-image: url(img/Background2.jpg);
   background-repeat: no-repeat;
   background-size: contain;*/
   grid-template-areas:
-  "header header profilepic"
-  "aboutme aboutme profilepic"
-  "projects projects profilepic"
-  "fortuneteller virtualpet sidebar"
-  "footer footer footer";
+  "header header header header"
+  "aboutme aboutme aboutme profilepic"
+  ". projects projects ."
+  ". fortuneteller fortuneteller ."
+  ". virtualpet virtualpet ."
+  ". virtualpetsshelter virtualpetsshelter ."
+  "footer footer footer footer";
   font-family: Lucida Sans Unicode;
-  background-color: white;
+  background-color: #b7c7ea;
 }
 
-p {
-	font-size: arial;
-}
 
 header {
 	grid-area: header;
 	text-align: start;
 	align-self: center;
-	background-color: azure;
+	background-color: white;
 }
 
 ul {
@@ -39,36 +38,57 @@ ul li{
 .aboutme {
 	text-align: center;
 	grid-area: aboutme;
-	background-color: aqua;
-}
-
-.fortuneteller {
-	grid-area: fortuneteller;
-	background-color: blue;
+	background-color: #b7c7ea;
 }
 
 .projects {
 	grid-area: projects;
-	background-color: #f0f8ff;
+	text-align: center;
+	background-color: ##b7c7ea;
+}
+
+.fortuneteller {
+	grid-area: fortuneteller;
+	background-color: #b7c7ea;
+}
+
+#fortunetellerimg {
+	width: 750px;
+	height: 500px;
 }
 
 .virtualpet {
 	grid-area: virtualpet;
-	background-color: #b3dbff;
+	background-color: #b7c7ea;
 }
 
-.sidebar {
+#virtualpetimg{
+	width: 750px;
+	height: 500px;
+
+}
+
+.virtualpetsshelter{
+	grid-area: virtualpetsshelter;
+	background-color: #b7c7ea;
+}
+
+#virtualpetsshelterimg {
+	width: 750px;
+	height: 500px;
+}
+
+.sidebar{
 	grid-area: sidebar;
 	background-color: white;
 }
-
 .footer {
 	grid-area: footer;
-	background-color: #0088ff;
+	background-color: #b7c7ea;
 }
 
 #profilepic{
-	width: 250px;
-	height: 300px;
-	margin: 10px;
+	width: 200px;
+	height: 250px;
+	border-radius: 20%
 }
