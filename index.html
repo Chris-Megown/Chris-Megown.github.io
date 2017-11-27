@@ -26,14 +26,24 @@
 			</ul>
 		</section>
 
+		<section class ="details">
+			<p><strong>Name:</strong><br/> 
+			Christopher Megown <br/>
+			<strong>Age:</strong> <br/>
+		    31 <br/>
+			<strong>Current Location:</strong> <br/>
+			Columbus, OH</p>
+
+		</section>
+
 		<img id="profilepic" src="img/Megownheadshot.jpg" alt="Profile Picture">
 		
 		<section class="projects">
 			<h2>My Projects</h2>
 			<p>I used Java for these projects</p>
 		</section>
-
-		<article class ="fortuneteller">
+<div id="my-github-projects"></div>
+		<!-- <article class ="fortuneteller">
 			<h4>Fortune Teller</h4>
 			<p>This program was created to prompt the user for basic information, compile the information, and output a "fortune" based on the users input.  There's a screenshot of some of the code, or check out my <a href="https://github.com/Chris-Megown/first-graded-project" target="_blank"><strong>Repository</strong></a> for the full code.</p>
 			<img id="fortunetellerimg" src="img/FortuneTeller.jpg" alt="Fortune Teller picture">
@@ -51,7 +61,7 @@
 			<p>The Shelter program basically allowed the user to create and store multiple pets.  It was an extension of the previous program and allowed for taking care of multiple pets at once.  Again, There's a screenshot of some of the code, or check out my <a href="https://github.com/Chris-Megown/virtual-pet-shelter" target="_blank"><strong>Repository</strong></a> for the full code.</p> </p>
 			<img id="virtualpetsshelterimg" src="img/VirtualPetShelter.JPG" alt="Virtual Pet Shelter Picture">
 			
-		</article>
+		</article> -->
 
 		<footer class="footer">
 			<p>Email me <a href="mailto:Chris.A.Megown@gmail.com">Here!</a></p>
@@ -61,5 +71,12 @@
 
 		</footer>
 	</div>
+	<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="main.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#my-github-projects").loadRepositories("Chris-Megown");
+    });
+</script>
 </body>
 </html>

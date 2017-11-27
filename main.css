@@ -1,19 +1,26 @@
+/*get layout set up, maybe with background img
+  scrolling projects?
+  more color and style
+  update linkin and github icons
+  FORM stuff @ bottom */
+
+
 #container {
 	display: grid;
-	grid-template-columns: 1fr 2fr 2fr 1fr;
-	grid-template-rows: 85px 300px auto auto auto 1fr 150px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 200px auto auto auto auto 1fr 150px;
 	grid-gap: 5px;
  /* background-image: url(img/Background2.jpg);
   background-repeat: no-repeat;
   background-size: contain;*/
   grid-template-areas:
-  "header header header header"
-  "aboutme aboutme aboutme profilepic"
-  ". projects projects ."
-  ". fortuneteller fortuneteller ."
-  ". virtualpet virtualpet ."
-  ". virtualpetsshelter virtualpetsshelter ."
-  "footer footer footer footer";
+  "header header header header header"
+  ". aboutme profilepic details ."
+  ". . projects . ."
+  ". github github github ."
+  ". github github github ."
+  ". github github github ."
+  "footer footer footer footer footer";
   font-family: Lucida Sans Unicode;
   background-color: #b7c7ea;
 }
@@ -21,16 +28,12 @@
 
 header {
 	grid-area: header;
-	align-self: center;
+    text-align: center;
 	background-color: white;
 }
 
 h1 {
-	text-align: start;
-}
-header.ul {
-	justify-self: end;
-	display: inline;
+	
 }
 
 ul {
@@ -43,48 +46,35 @@ ul li{
 	padding: 10px;
 
 }
+
+#my-github-projects {
+	grid-area: github;
+	display: inline;
+}
 .aboutme {
 	text-align: center;
 	grid-area: aboutme;
 	background-color: #b7c7ea;
 }
 
+#profilepic{
+	grid-area: profilepic;
+	width: 80%;
+	height: auto;
+	border: 3px solid black;
+	border-radius: 90%;
+	margin: 10px;
+
+}
+.details {
+	grid-area: details;
+}
 .projects {
 	grid-area: projects;
 	text-align: center;
 	background-color: ##b7c7ea;
 }
 
-.fortuneteller {
-	grid-area: fortuneteller;
-	background-color: #b7c7ea;
-}
-
-#fortunetellerimg {
-	width: 750px;
-	height: 500px;
-}
-
-.virtualpet {
-	grid-area: virtualpet;
-	background-color: #b7c7ea;
-}
-
-#virtualpetimg{
-	width: 750px;
-	height: 500px;
-
-}
-
-.virtualpetsshelter{
-	grid-area: virtualpetsshelter;
-	background-color: #b7c7ea;
-}
-
-#virtualpetsshelterimg {
-	width: 750px;
-	height: 500px;
-}
 
 .sidebar{
 	grid-area: sidebar;
@@ -96,11 +86,3 @@ ul li{
 	background-color: #b7c7ea;
 }
 
-#profilepic{
-	width: 80%;
-	height: auto;
-	border: 3px solid black;
-	border-radius: 50%;
-	margin: 10px;
-
-}
