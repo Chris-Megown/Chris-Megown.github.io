@@ -7,19 +7,16 @@
 
 #container {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 300px 1fr 1fr;
 	grid-template-rows: 200px auto auto auto auto 1fr 150px;
 	grid-gap: 5px;
- /* background-image: url(img/Background2.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;*/
   grid-template-areas:
   "header header header header header"
   ". aboutme profilepic details ."
   ". . projects . ."
-  ". github github github ."
-  ". github github github ."
-  ". github github github ."
+  ". . github . ."
+  ". . github . ."
+  ". . github . ."
   "footer footer footer footer footer";
   font-family: Lucida Sans Unicode;
   background-color: #b7c7ea;
