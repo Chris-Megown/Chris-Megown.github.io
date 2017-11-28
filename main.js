@@ -12,19 +12,22 @@ jQuery.fn.loadRepositories = function(username) {
      
         var list = $('<dl/>');
         target.empty().append(list);
-        $(repos).each(function() {
+        var newRepos = $(repos).slice(0,6);
+        $(newRepos).each(function() {
             if (this.name != (username.toLowerCase()+'.github.com')) {
                 list.append('<dt><a href="'+ (this.homepage?this.homepage:this.html_url) +'">' + this.name + '</a> <em>'+(this.language?('('+this.language+')'):'')+'</em></dt>');
-                list.append('<dd>' + '<img src ="' + this.description + '" width="100"></img>' +'</dd>');
+                list.append('<dd>' + this.description +'</dd>');
                 list.append('<dd>' + this.updated_at + '</dd>');
             }
         });      
       });
       
     function sortByName(repos) {
-        repos.sort(function(a,b) {
-        return a.name - b.name;
-       });
+       repos.sort(function(a, b) {
+    a = new Date(a.updated_at);
+    b = new Date(b.updated_at);
+    return a>b ? -1 : a<b ? 1 : 0;
+});
     }
 };
    
