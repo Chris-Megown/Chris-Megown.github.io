@@ -1,14 +1,8 @@
-/*get layout set up, maybe with background img
-  scrolling projects?
-  more color and style
-  update linkin and github icons
-  FORM stuff @ bottom */
-
 
 #container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 300px 1fr 1fr;
-	grid-template-rows: 400px 400px auto auto auto auto 1fr 150px;
+	grid-template-rows: 1fr 400px auto auto auto auto 1fr 150px;
 	grid-gap: 5px;
   grid-template-areas:
   "header header header header header"
@@ -28,9 +22,7 @@ header {
     text-align: center;
 }
 
-h1 {
-	
-}
+
 
 ul {
 	list-style-type: none; 
@@ -90,6 +82,7 @@ ul li{
 }
 
 #github {
-	width:50px;
-	height:30px;
+	text-align: center;
+	width:60px;
+	height:40px;
 }
