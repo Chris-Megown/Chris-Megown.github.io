@@ -1,82 +1,72 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Chris-Megown</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
-	
-</head>
-<body>
-	<div id="container">
 
-		<header>
-			<h1>Chris Megowns Portfolio</h1>
-		</header>
-		<section class ="aboutme">
-			<p>Hello, I am a Junior Developer and recent boot camp graduate.</p> 
-			<p>I am always hard at work enhancing my skills in software development, testing, and delivery of web applications, leveraging technologies such as:</p>
-			<ul>
-				<li>Java</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Javascript</li>
-				<li>Bootstrap</li>
-				<li>Spring MVC</li>
-			</ul>
-		</section>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
 
-		<section class ="details">
-			<p><strong>Name:</strong><br/> 
-			Christopher Megown <br/>
-			<strong>Age:</strong> <br/>
-		    31 <br/>
-			<strong>Current Location:</strong> <br/>
-			Columbus, OH</p>
+    <title>Chris Megown</title>
 
-		</section>
+    <!-- Bootstrap core CSS -->
+    <link href="https://bootswatch.com/4/lux/bootstrap.min.css" rel="stylesheet">
 
-		<img id="profilepic" src="img/Megownheadshot.jpg" alt="Profile Picture">
-		
-		<section class="projects">
-			<h2>My Projects</h2>
-			<p>I used Java for these projects</p>
-		</section>
-<div id="my-github-projects"></div>
-		<!-- <article class ="fortuneteller">
-			<h4>Fortune Teller</h4>
-			<p>This program was created to prompt the user for basic information, compile the information, and output a "fortune" based on the users input.  There's a screenshot of some of the code, or check out my <a href="https://github.com/Chris-Megown/first-graded-project" target="_blank"><strong>Repository</strong></a> for the full code.</p>
-			<img id="fortunetellerimg" src="img/FortuneTeller.jpg" alt="Fortune Teller picture">
-			
-		</article>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
 
-		<article class ="virtualpet">
-			<h4>Virtual Pet</h4>
-			<p>This particular program was constructs virtual pets, and allows the user to take care of the pets' needs.  Actions such as feeding watering and playing were all possible within the profram.  Users were warned if pets stats were too low and the rate continued the pet would die.  There's a screenshot of some of the code, or check out my <a href="https://github.com/Chris-Megown/virtual-pet" target="_blank"><strong>Repository</strong></a> for the full code.</p>
-			<img id="virtualpetimg" src="img/VirtualPet.JPG" alt="Virtual Pet Picture">
-		</article>
+  <body>
 
-		<article class ="virtualpetsshelter">
-			<h4>Virtual Pet Shelter</h4>
-			<p>The Shelter program basically allowed the user to create and store multiple pets.  It was an extension of the previous program and allowed for taking care of multiple pets at once.  Again, There's a screenshot of some of the code, or check out my <a href="https://github.com/Chris-Megown/virtual-pet-shelter" target="_blank"><strong>Repository</strong></a> for the full code.</p> </p>
-			<img id="virtualpetsshelterimg" src="img/VirtualPetShelter.JPG" alt="Virtual Pet Shelter Picture">
-			
-		</article> -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Chris Megown</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		<footer class="footer">
-			<p>Email me <a href="mailto:Chris.A.Megown@gmail.com">Here!</a></p>
-			<p>Or</p>
-			<a id="github" href="https://github.com/Chris-Megown" target="_blank"><img src="img/github.jpg" style="width:50px;height:50px;"></a>	
-			<a id="linkedin" href="https://www.linkedin.com/in/chris-megown/" target="_blank"><img src="img/linked.jpg" style="width:50px;height:50px;"></a>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
-		</footer>
-	</div>
-	<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script src="main.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(function() {
-        $("#my-github-projects").loadRepositories("Chris-Megown");
-    });
-</script>
-</body>
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1>Sear Github Users</h1>
+        <p class="lead">Enter a username to getch a users profile info and repos</p>
+        <input type="text" id="searchUser" class="form-control" placeholder="Github Username...">
+      </div>
+      <br>
+      <div id="profile"></div>
+
+    </main><!-- /.container -->
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
